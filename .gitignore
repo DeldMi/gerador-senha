@@ -1,0 +1,14 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de dependências
+node_modules/
+package-lock.json
+
+# Arquivos de build/compilação
+*.map
+.sass-cache/
+
+# Arquivos de ambiente
+.env 

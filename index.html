@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Gerador de Senha</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Gerar Senha</a></li>
+                <li><a href="pages/decodificar.html">Decodificar</a></li>
+                <li><a href="pages/instrucoes.html">Instruções</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Gerador de Senha</h1>
+        <div class="input-group">
+            <label for="texto">Digite sua informação principal:</label>
+            <input type="text" id="texto" placeholder="Ex: seu@email.com">
+        </div>
+        <div class="input-group">
+            <label for="texto-secundario">Informação adicional (opcional):</label>
+            <input type="text" id="texto-secundario" placeholder="Ex: nome do site">
+        </div>
+        <div class="input-group">
+            <label for="tamanho">Tamanho da senha:</label>
+            <input type="number" id="tamanho" value="12" min="6" max="32">
+        </div>
+        <button onclick="gerarNovaSenha()">Gerar Senha</button>
+        <br><br>
+        <strong>
+            Senha gerada:
+        </strong>
+        <div id="resultado"></div>
+        <button onclick="embaralharSenha()" class="botao-secundario">Embaralhar Novamente</button>
+
+        <div class="info-secundaria">
+            <h2>Instruções Rápidas</h2>
+            <ul>
+                <li>Use uma informação que você lembre facilmente</li>
+                <li>Adicione uma informação extra para criar variações</li>
+            </ul>
+            <a href="pages/instrucoes.html" class="link-instrucoes" target="_blank">
+                Ver instruções completas e dicas de segurança →
+            </a>
+            <a href="pages/decodificar.html" class="link-instrucoes">
+                Verificar uma senha existente →
+            </a>
+        </div>
+        <footer class="rodape">
+            <p>&copy; 2024 Andre Felipe - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
